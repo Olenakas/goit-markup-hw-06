@@ -285,7 +285,9 @@ button{
 }
 .modal-btn:hover,
 .modal-btn:focus{
-    background-color: var(--accent-color-hover);  
+    background-color: var(--accent-color-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 }
 /*==========/HERO SECTION==========*/
 /*==========ADVANTADES==========*/
@@ -395,7 +397,7 @@ button{
 .social-list-link-dark:focus{
     background-color: #31D0AA;
 }
-.footer-part-three-wrap{
+.footer-form{
     display: flex;
     align-items: center;
     position: relative;
@@ -408,7 +410,7 @@ button{
     margin-right: 24px;
 
 }
-.footer-input-desc{
+/*.footer-input-desc{
     position: absolute;
     top: 50%;
     left: 16px;
@@ -418,7 +420,7 @@ button{
     color: rgba(255, 255, 255, 0.6);
 
 
-}
+}*/
 .footer-input{
     width: 264px;
     height: 40px;
@@ -454,14 +456,8 @@ button{
     align-items: center;
     gap: 16px; 
     border: none;
-    transition: background-color var(--timing-function);
-
-    
-
+    transition: background-color var(--timing-function);  
 }
-
-
-
 
 .modal-btn-footer:hover,
 .modal-btn-footer:focus{
@@ -524,7 +520,8 @@ button{
 .filtres-btn:focus{
     color: var(--primary-text-color-theme-dark);
     background-color: var(--accent-color-hover);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);    
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: 1px solid #E7E9FC;   
 }
 /*==========/PORTFOLIO FILTRES========*/
 /*==========MODAL WINDOV/==========*/
@@ -643,8 +640,8 @@ button{
 }
 .modal-form-input:focus + .modal-form-input-icon{
     fill: var(--accent-color);
-
 }
+
 .modal-form-message{
     resize: none;
     width: 100%;
@@ -667,9 +664,7 @@ button{
 .modal-form-message:focus{
     outline: none;
     border-color: var(--accent-color);
-
 }
-
 
 .modal-form-chek-desc::before{ 
     display: block; 
@@ -681,24 +676,18 @@ button{
     content: '';
     cursor: pointer;
     transition: fill var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function);
-
 }
-.modal-form-chek:checked + .modal-form-chek-desc::before{
- 
-   
-   
+.modal-form-chek:checked + .modal-form-chek-desc::before{   
     background-color: var(--accent-color);
     background-image: url(../images/vector.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
 }
-/*.modal-form-chek:focus + .modal-form-chek-desc::before{
-   
+.modal-form-chek:focus + .modal-form-chek-desc::before{
+   box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #000000;
   opacity: ;
-}*/
+}
 .modal-form-chek-desc{
     display: flex;
     align-items: center;
@@ -707,9 +696,8 @@ button{
     letter-spacing: 0.04em;
     color: #757575;
     margin-bottom: 24px;
-
-
 }
+
 
 .user-policy-link{
     color: var(--accent-color);
