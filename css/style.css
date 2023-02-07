@@ -431,11 +431,10 @@ button{
     transition: border-color var(--timing-function);
     padding: 0 16px;
     outline: none;
+    font-size: 12px;
  
 }
-.footer-input:focus
-{
-   
+.footer-input:focus{   
     border-color: var(--accent-color);
 }
 
@@ -443,8 +442,7 @@ button{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.07;
-    padding: 8px 24px;
- 
+    padding: 8px 24px; 
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--primary-text-color-theme-dark);
@@ -597,12 +595,10 @@ button{
 }
 .modal-form-field{
     margin-bottom: 16px;
-
 }
 .modal-form-input-wrap{
     display: block;
     position: relative;
-
 }
 .modal-form-input-desc{
     display: block;
@@ -625,8 +621,6 @@ button{
     transition: border-color var(--timing-function); 
 
 }
-
-
 .modal-form-input-icon{
     position: absolute;
     top: 50%;
@@ -686,7 +680,7 @@ button{
 }
 .modal-form-chek:focus + .modal-form-chek-desc::before{
    box-shadow: 0 0 0 1px #FFFFFF, 0 0 0 2px #000000;
-  opacity: ;
+  
 }
 .modal-form-chek-desc{
     display: flex;
