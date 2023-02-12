@@ -510,7 +510,8 @@ button{
     font-size: 16px;
     line-height: 1.5;
     background: var(--additiomal-color);
-    border: 1px solid var(--secondary-text-color-theme-dark); 
+    border: 1px solid var(--secondary-text-color-theme-dark);
+    border-radius: 4px; 
     padding: 12px 24px;
     transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function);
 }
@@ -593,7 +594,7 @@ button{
     justify-content: center;
 }
 .modal-form-field{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .modal-form-input-wrap{
     display: block;
